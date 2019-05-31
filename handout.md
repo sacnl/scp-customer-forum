@@ -18,10 +18,10 @@ Select API Endpoint `https://api.cf.eu10.hana.ondemand.com`, enter your credenti
 
 ### Prepare the application
 1. Return to the Home screen of SAP Web IDE and choose *Clone from Git repository*.
-2. Enter URL `TODO` and click Clone. 
+2. Enter URL `https://github.com/sacnl/scp-forum-london.git` and click Clone. 
 3. Wait for the success message that cloning was successful.
 Then, go to the Development area (code icon in the left menu bar).
-7. Open the folder *TODO* and, therein, open the file mta.yaml.
+7. Open the folder *scp-forum-london* and, therein, open the file mta.yaml.
 8. In the editor, replace each of the two occurrences of `99` (first and last line) with a unique number.
 9. Save your changes (*Ctrl+S* or use *File > Save*).
 
@@ -32,7 +32,7 @@ You can also set *Preferences > Code Editor > Automatically save changes*.
 Otherwise, Web IDE will continue to launch the old version.
 
 ## Task 1: Deploy the application
-1. Right-clik on the folder *TODO* and choose *Build > Build*.
+1. Right-click on the folder *scp-forum-london* and choose *Build > Build*.
 2. Wait until the build has completed and you see a new folder *mta_archives* with one file *scp-london...mtar*.
 3. Right click on that file and choose *Deploy > Deploy to SAP Cloud Platform*.
 4. Verify that the endpoint and Cloud Foundry space from before are selected and click Deploy.
