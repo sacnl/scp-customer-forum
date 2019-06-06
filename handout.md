@@ -14,15 +14,15 @@ Select Frankfurt as the region and confirm the dialog.
 Click on that tile and click Enable.
 5. Wait for the enabling to finish and click *Go to Service*.
 6. In SAP Web IDE, go to Preferences in the menu bar on the left (gear icon) and choose *Cloud Foundry*.
-Select API Endpoint `https://api.cf.eu10.hana.ondemand.com`, enter your credentials, and click Save.
+Select API Endpoint `https://api.cf.eu10.hana.ondemand.com`, enter your credentials, wait for your organization and space to appear, and click Save.
 
 ### Prepare the application
 1. Return to the Home screen of SAP Web IDE and choose *Clone from Git repository*.
 2. Enter URL `https://github.com/sacnl/scp-forum-london.git` and click Clone. 
 3. Wait for the success message that cloning was successful.
 Then, go to the Development area (code icon in the left menu bar).
-7. Open the folder *scp-forum-london* and, therein, open the file mta.yaml.
-8. In the editor, replace each of the two occurrences of `99` (first and last line) with a unique number.
+7. Open the folder *scp-forum-london* and, therein, open the file *mta.yaml*.
+8. Switch to the code editor and replace each of the two occurrences of `99` (first and last line) with a unique number.
 9. Save your changes (*Ctrl+S* or use *File > Save*).
 
 ### Important notes when working in SAP Web IDE
@@ -35,7 +35,7 @@ Otherwise, Web IDE will continue to launch the old version.
 1. Right-click on the folder *scp-forum-london* and choose *Build > Build*.
 2. Wait until the build has completed and you see a new folder *mta_archives* with one file *scp-london...mtar*.
 3. Right click on that file and choose *Deploy > Deploy to SAP Cloud Platform*.
-4. Verify that the endpoint and Cloud Foundry space from before are selected and click Deploy.
+4. Select the endpoint `https://api.cf.eu10.hana.ondemand.com` and the Cloud Foundry space from befor and click Deploy.
 
 The deployment will take a few minutes.
 You can continue with the next step.
@@ -77,7 +77,7 @@ In the following, we are going to fix these issues in the source code of the app
 ### Issue 1: Retrieve the position of each business partner
 In this case, the position of a business partner is stored in the *search term* property.
 We need to select this property when retrieving details of a business partner from SAP S/4HANA, using the SAP Cloud SDK.
-1. Expand the folder *srv > application > src > main > ... > addressmgr > commands* and open the file *GetSingleBusinessPartnerByIdCommand.java*.
+1. Expand the folder *srv > application > src > main > java > ... > addressmgr > commands* and open the file *GetSingleBusinessPartnerByIdCommand.java*.
 2. The method responsible for retrieving details of each business partner starts in line 28.
 
 As of now, the property *search term* is not being selected as part of the OData request.
@@ -108,7 +108,7 @@ return service.createBusinessPartnerAddress(addressToCreate).execute();
 5. Wait for the application to start and verify that you are now able to create an address.
 
 ### Redeploy the application
-When we are content with the fixes in our test deployment, we can redeploy the full application.
+When we are happy with the fixes in our test deployment, we can redeploy the full application.
 Usually, we would a continuous delivery pipeline for this. 
 Here, manually execute the steps from [Task 1](#task-1-deploy-the-application) (Build & Deploy) again.
 
@@ -129,3 +129,7 @@ Enter *my-ml-service* as instance name on the last screen of the dialog.
 9. Click Finish.
 10. Go back to the Overview and click Restart.
 11. After the application has restarted successfully, translate the position of any business partner by clicking on the link.
+
+## Congratulations!
+That's it, you have successfully finished the exercise.
+You can continue with the many tutorials of the SAP Cloud SDK available from [this overview blog post](https://blogs.sap.com/2017/05/10/first-steps-with-sap-s4hana-cloud-sdk/).
