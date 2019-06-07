@@ -5,14 +5,15 @@ In the following exercise, you will create an extension to SAP S/4HANA Cloud on 
 ## Task 0: Setup
 
 ### Create and configure account
-1. Visit https://cloudplatform.sap.com/index.html and register for a free trial.
-2. After registering, log on to https://account.hanatrial.ondemand.com/cockpit/.
+You can skip the steps marked with *(skip?)* if you already have an SAP Web IDE trial instance.
+1. *(skip?)* Visit https://cloudplatform.sap.com/index.html and register for a free trial.
+2. *(skip?)* After registering, log on to https://account.hanatrial.ondemand.com/cockpit/.
 3. Click on the button to start a Cloud Foundry trial.
 Select Frankfurt as the region and confirm the dialog.
-3. Go back to the starting page and also start a Neo trial.
-4. In the Neo subaccount, go to Services and look for the tile *SAP Web IDE Full-Stack*.
+3. *(skip?)* Go back to the starting page and also start a Neo trial.
+4. *(skip?)* In the Neo subaccount, go to Services and look for the tile *SAP Web IDE Full-Stack*.
 Click on that tile and click Enable.
-5. Wait for the enabling to finish and click *Go to Service*.
+5. *(skip?)* Wait for the enabling to finish and click *Go to Service*.
 6. In SAP Web IDE, go to Preferences in the menu bar on the left (gear icon) and choose *Cloud Foundry*.
 Select API Endpoint `https://api.cf.eu10.hana.ondemand.com`, enter your credentials, wait for your organization and space to appear, and click Save.
 
