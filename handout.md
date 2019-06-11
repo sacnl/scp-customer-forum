@@ -5,7 +5,9 @@ In the following exercise, you will create an extension to SAP S/4HANA Cloud on 
 ## Task 0: Setup
 
 ### Create and configure account
-You can skip the steps marked with *(skip?)* if you already have an SAP Web IDE trial instance.
+You can skip the steps marked with *(skip?)* if you already have an SAP Cloud Platform trial account and SAP Web IDE trial instance.
+If you want to reuse an account, please make sure that you have the credentials of the account available, as you will need to enter them during the course of the exercise.
+If you are unsure, create a fresh trial account according to the following steps.
 1. *(skip?)* Visit https://cloudplatform.sap.com/index.html and register for a free trial.
 2. *(skip?)* After registering, log on to https://account.hanatrial.ondemand.com/cockpit/.
 3. Click on the button to start a Cloud Foundry trial.
