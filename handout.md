@@ -21,10 +21,10 @@ Select API Endpoint `https://api.cf.eu10.hana.ondemand.com`, enter your credenti
 
 ### Prepare the application
 1. Return to the Home screen of SAP Web IDE and choose *Clone from Git repository*.
-2. Enter URL `https://github.com/sacnl/scp-forum-london.git` and click Clone. 
+2. Enter URL `https://github.com/sacnl/scp-customer-forum.git` and click Clone. 
 3. Wait for the success message that cloning was successful.
 Then, go to the Development area (code icon in the left menu bar).
-7. Open the folder *scp-forum-london* and, therein, open the file *mta.yaml*.
+7. Open the folder *scp-customer-forum* and, therein, open the file *mta.yaml*.
 8. Switch to the code editor and replace each of the two occurrences of `99` (first and last line) with a unique number.
 9. Save your changes (*Ctrl+S* or use *File > Save*).
 
