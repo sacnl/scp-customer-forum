@@ -35,7 +35,7 @@ You can also set *Preferences > Code Editor > Automatically save changes*.
 Otherwise, Web IDE will continue to launch the old version.
 
 ## Task 1: Deploy the application
-1. Right-click on the folder *scp-forum-london* and choose *Build > Build*.
+1. Right-click on the folder *scp-customer-forum* and choose *Build > Build*.
 2. Wait until the build has completed and you see a new folder *mta_archives* with one file *scp-london...mtar*.
 3. Right click on that file and choose *Deploy > Deploy to SAP Cloud Platform*.
 4. Select the endpoint `https://api.cf.eu10.hana.ondemand.com` and the Cloud Foundry space from befor and click Deploy.
